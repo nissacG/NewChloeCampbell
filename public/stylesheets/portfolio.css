@@ -638,6 +638,13 @@ footer p {
   font-size: 90%;
 }
 
+
+footer a{
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
 footer a:hover{
   color: #fff;
 }
