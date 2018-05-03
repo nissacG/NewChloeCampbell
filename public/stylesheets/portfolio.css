@@ -638,6 +638,10 @@ footer p {
   font-size: 90%;
 }
 
+footer a:hover{
+  color: #fff;
+}
+
 footer span.copyright {
   font-size: 90%;
   line-height: 40px;
@@ -647,11 +651,11 @@ footer span.copyright {
 
 footer span.copyright a{
   text-decoration: underline;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
-footer a:hover{
-  color: #fff;
-}
 footer span.copyright a:hover{
   font-weight: 400;
 }
