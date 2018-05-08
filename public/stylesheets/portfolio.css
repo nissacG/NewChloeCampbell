@@ -258,8 +258,6 @@ header.masthead .intro-text .intro-subheading {
     font-size: 80px;
     line-height: 40px;
     padding: 300px 30px 10px;
-    /*margin: 25px;*/
-    font-family: 'Poppins', Arial, sans-serif;
   }
 }
 
@@ -300,7 +298,6 @@ header.masthead .intro-text .intro-subheading {
 
 .skills-heading {
   margin: 15px 0;
-  text-transform: none;
   color: var(--darkest-grey);
 }
 
