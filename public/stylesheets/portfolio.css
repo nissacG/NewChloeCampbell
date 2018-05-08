@@ -124,8 +124,6 @@ ul {
   animation: fade-in 1s 2s ease-in forwards;
 }
 
-
-
 #mainNav.navbar-shrink {
   -webkit-box-shadow: 0 4px 6px -6px #222;
   -moz-box-shadow: 0 4px 6px -6px #222;
@@ -154,6 +152,7 @@ ul {
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
   color: var(--dark-grey);
 }
+
 @media (min-width: 992px) {
   #mainNav {
     padding-top: 10px;
@@ -188,7 +187,6 @@ ul {
     transition: all 0.3s;
     font-size: 0.8em;
   }
-
 }
 
 /*Header Styling*/
@@ -210,19 +208,11 @@ ul {
 }
 
 header.masthead {
-  /*text-align: center;*/
-  /*color: #fff;*/
   color: var(--light-grey);
 }
 
-@keyframes fade-in {
-  100% {
-    opacity: 1;
-  }
-}
-
 header.masthead .intro-text {
-  padding-top: 150px;
+  padding-top: 100px;
   padding-bottom: 100px;
 }
 
@@ -230,6 +220,12 @@ header.masthead .intro-text a{
   padding-left: 30px;
   opacity: 0;
   animation: fade-in 1s 4s ease-in forwards;
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+  }
 }
 
 header.masthead .intro-text .intro-lead-in {
