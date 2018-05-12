@@ -278,8 +278,12 @@ header.masthead .intro-text .intro-subheading {
   background-color: #fff;
 }
 
+section.portfolio h3.section-subheading {
+  margin: 0 10px 100px 10px;
+}
+
 .about .grid {
-  flex-direction: column-reverse;
+  flex-direction: column;
   justify-content: space-around;
   margin-top: 20px;
 }
@@ -287,8 +291,11 @@ header.masthead .intro-text .intro-subheading {
 .skills {
   text-align: center;
   margin: 20px;
-  width: 300px;
-  flex: 1 1 300px;
+  width: 300px
+}
+
+#aboutHeading {
+
 }
 
 .skills p , .skills h4 {
@@ -296,21 +303,20 @@ header.masthead .intro-text .intro-subheading {
   padding: 0 20px;
 }
 
-.skills-heading {
-  margin: 15px 0;
-  color: var(--darkest-grey);
-}
-
-section.about img {
-  max-height: 250px;
-  max-width: 250px;
-  border-radius: 50%;
-}
-
 @media (min-width: 768px) {
-  section.about img {
-    max-height: 350px;
-    max-width: 350px;
+
+  .skills {
+    width: 200px;
+  }
+
+  #aboutHeading {
+    align-self: flex-start;
+    padding-top: 20px;
+  }
+
+  #aboutContext {
+    flex-basis: 300px;
+    flex-grow: 4;
   }
 
   .about .grid {
