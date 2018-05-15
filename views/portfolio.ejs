@@ -119,31 +119,48 @@
     <section id="contact">
         <div class="container">
             <h2 class="section-heading">Get in touch.</h2>
-            <h3 class="section-subheading">Interested in a commision? Drop me a line.</h3>
-            <div class="row col-sm-12">
-                <div class="col-sm-6">
-                    <div class="m-0 p-0" id="map">
-                        <iframe width="100%" height="355px;" frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9932.320280591397!2d-0.098643!3d51.511747!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf08fd1c10779efc9!2sCity+of+London+School!5e0!3m2!1sen!2suk!4v1525350645688" allowfullscreen></iframe>
-                    </div>
+            <h3 class="section-subheading">Interested in a commision? Fill out the form below with as much info as you can and I will be in touch!</h3>
+            <!-- <p>Interested in a commision? Fill out the form below with as much info as you can and I will be in touch!</p> -->
+            <p>The cost of each commission is different. Each cost is based on the cost of materials, studio fees and the overall time required. This will all be discussed during my follow up.</p>
+            <div class="row">
+              <form>
+                <div class="form-row">
+                  <div class="form-group col-md-4">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Name" required="">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email" required="">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone Number">
+                  </div>
                 </div>
-                <div class="col-sm-6">
-                    <form class="contact-form">
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="name" name="nm" placeholder="Name" required="">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" id="email" name="em" placeholder="Email" required="">
-                    </div>
-                    <div class="form-group">
-                        <input type="text" class="form-control" id="phone" placeholder="Mobile No.">
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control textarea-contact" rows="5" id="comment" name="FB" placeholder="Type Your Message/Feedback here" required=""></textarea>
-                        <br>
-                        <button class="btn btn-default btn-send btn-block" id="send-button"><span class="fab fa-telegram-plane"></span> Send </button>
-                    </div>
-                    </form>
+                <div class="form-group">
+                  <label for="subject">A Short Description of Subject Matter</label>
+                  <textarea type="text" rows="3" class="form-control" id="subject" name="subject" placeholder="Subject Matter (Please mention any similar pieces you have seen either before or from my collection)" required=""></textarea>
                 </div>
+                <div class="form-row">
+                  <div class="form-group col-md-8">
+                  <label for="material">A Short Description of Materials in Mind</label>
+                  <input type="text" class="form-control" id="materials" name="materials" placeholder="Materials">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="size">Size</label>
+                    <select id="size" class="form-control" name="size" required>
+                      <option value="">Choose...</option>
+                      <option value="unknown">Not Sure</option>
+                      <option value="a1">A1</option>
+                      <option value="a2">A2</option>
+                      <option value="a3">A3</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-default btn-send btn-block" id="send-button"><span class="fab fa-telegram-plane"></span> Send </button>
+              </form>
             </div>
         </div>  
     </section>
@@ -161,7 +178,7 @@
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
                         <li class="list-inline-item">
-                            <a href="#">
+                            <a href="mailto:chloecampbellart@gmail.com">
                             <i class="far fa-envelope fa-2x"></i>
                             </a>
                         </li>
